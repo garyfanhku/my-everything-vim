@@ -40,24 +40,32 @@ apt install vim
 ```
 
 ## install vim-plug
+
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 ## (optional) install fzf
+
 ```bash
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 source ~/.bashrc
 ```
 
-## prepare to install coc 
-### -- Install nodejs >= 10.12:
+## (optional) install ripgrep
+
+```bash
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.2/ripgrep_11.0.2_amd64.deb
+dpkg -i ripgrep_11.0.2_amd64.deb
+```
+
+## prepare to install coc
+
+### -- Install nodejs >= 10.12
 
 ```bash
 curl -sL install-node.now.sh/lts | bash
 ```
 
 Run `:PlugInstall` and `:CocInstall coc-python`
-
-
